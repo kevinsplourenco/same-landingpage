@@ -41,6 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
         return re.test(password);
     }
 
+    document.querySelector('.submit').addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do formulário
+        window.location.href = 'https://kevinsplourenco.github.io/SAME-IHC/pagina_inicial.html';
+    });
+
     window.validateRegister = function (event) {
         event.preventDefault();
 

@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.querySelector('.submit').addEventListener('click', function(event) {
-        event.preventDefault(); // Impede o comportamento padrão do formulário
+        event.preventDefault(); 
         window.location.href = 'https://kevinsplourenco.github.io/SAME-IHC/pagina_inicial.html';
     });
 
@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (error) {
             openPopupError(error);
         } else {
-            // Aqui você pode adicionar a lógica para o registro bem-sucedido
             alert("Registrado com sucesso!");
         }
     };
